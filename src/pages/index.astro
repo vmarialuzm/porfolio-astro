@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import LinkedInIcon from '../components/icons/LinkedIn.astro'
+import GitHubIcon from '../components/icons/GitHub.astro'
+import MailIcon from '../components/icons/Mail.astro'
+import SocialPill from '../components/SocialPill.astro';
+import Experience from '../components/Experience.astro';
+import Briefcase from '../components/icons/Briefcase.astro';
+import CodeIcon from '../components/icons/Code.astro';
+import Projects from '../components/Projects.astro';
+---
+
+<Layout 
+	title="Porfolio de Luz - Backend Developer"
+	description='Backend Developer Jr. con manejo de frameworks como flask y django y bases de datos relaciones y no relacionales.Formada profesionalmente en Ingenieria Industrial con experiencia en Recursos Humanos. Mi objetivo final es utilizar mis conocimientos para crear soluciones a problemas reales.'
+>
+	<main class="px-4">
+		<SectionContainer class="py-44 pb-32">
+			<img 
+				class="rounded-full size-12 mb-4" 
+				src="https://media.licdn.com/dms/image/D4D03AQFDwgFd05XNfg/profile-displayphoto-shrink_800_800/0/1648177647805?e=1709769600&v=beta&t=d4qHQw8KdBRbk0X5vzbV4MPg9bVKXl_MzyWG9g2IWZU" 
+				alt="luz photo"
+			>
+
+			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
+				Hey, soy Luz <a 
+				href="https://www.linkedin.com/in/luz-maria-vivanco-merino/"
+				target="_blank"
+				rel="noopener"
+				class="flex justify-center items-center"
+				>
+					<Badge>Disponible para trabajar</Badge>
+				</a>
+			</h1>
+			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+				<span class="text-green-200/90">Backend Developer Jr. con manejo de frameworks como flask y django y bases de datos relaciones y no relacionales.</span>
+				<span class="text-yellow-200/90">Formada profesionalmente en Ingenieria Industrial con experiencia en Recursos Humanos.</span> 
+				<span class="text-red-200/90">Mi objetivo final es utilizar mis conocimientos para crear soluciones a problemas reales.</span>
+			</h2>
+
+			<nav class="flex gap-4 mt-8 flex-wrap">
+				<SocialPill href="https://www.linkedin.com/in/luz-maria-vivanco-merino/">
+					<LinkedInIcon class="size-4 md:size-6" />
+					LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/vmarialuzm">
+					<GitHubIcon class="size-4 md:size-6" />
+					GitHub
+				</SocialPill>
+				<SocialPill href="mailto:vmarialuzm@gmail.com">
+					<MailIcon class="size-4 md:size-6" />
+					vmarialuzm@gmail.com
+				</SocialPill>
+			</nav>
+		</SectionContainer>
+		
+		<SectionContainer id="experiencia">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<Briefcase class="size-7" />
+				Educación
+			</h2>
+			<Experience />
+		</SectionContainer>
+
+		<SectionContainer id="proyectos">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<CodeIcon class="size-7" />
+				Proyectos
+			</h2>
+			<Projects />
+		</SectionContainer>
+	</main>
+</Layout>
+
+
