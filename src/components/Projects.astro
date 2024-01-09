@@ -1,11 +1,23 @@
 ---
 import Drf from "./icons/Drf.astro"
+import Python from "./icons/Python.astro";
+import MongoDB from "./icons/MongoDB.astro";
 
 const TAGS = {
   DRF: {
     name: "Django",
     class: "bg-black text-white",
     icon: Drf
+  },
+  Python: {
+    name: "Python",
+    class: "bg-[#003159] text-white",
+    icon: Python
+  },
+  MongoDB: {
+    name: "MongoDB",
+    class: "bg-black text-white",
+    icon: MongoDB
   }
 }
 
@@ -13,11 +25,17 @@ const PROJECTS = [
     {
         title: 'Api de Pagos de Servicios',
         description: 'Creación de API de pagos con drf usando versionamiento',
-        link: '#',
         github: 'https://github.com/vmarialuzm/ProyectoFinal_drf',
         image: '/projects/drf.webp',
         tags: [TAGS.DRF]
-    }
+    },
+    {
+        title: 'Api Rick and Morty',
+        description: 'Para este proyecto consumí la api Rick and Morty, inserté los datos en una colección de MongoDB y creé vistas HTML usando PyMongo',
+        github: 'https://github.com/vmarialuzm/ProyectoFinal_Unidad3_2',
+        image: '/projects/drf.webp',
+        tags: [TAGS.Python, TAGS.MongoDB]
+    },
 ]
 ---
 
