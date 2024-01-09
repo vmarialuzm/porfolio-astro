@@ -10,6 +10,8 @@ import Education from '../components/Education.astro';
 import Briefcase from '../components/icons/Briefcase.astro';
 import CodeIcon from '../components/icons/Code.astro';
 import Projects from '../components/Projects.astro';
+import Experience from '../components/Experience.astro';
+import School from '../components/icons/School.astro';
 ---
 
 <Layout 
@@ -63,10 +65,20 @@ import Projects from '../components/Projects.astro';
 			<h2 
 				class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
 			>
-				<Briefcase class="size-7" />
+				<School class="size-7" />
 				Educación
 			</h2>
 			<Education />
+		</SectionContainer>
+
+		<SectionContainer id="experiencia">
+			<h2 
+				class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+			>
+				<Briefcase class="size-7" />
+				Experiencia
+			</h2>
+			<Experience />
 		</SectionContainer>
 
 		<SectionContainer id="proyectos">
