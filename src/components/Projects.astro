@@ -26,14 +26,14 @@ const PROJECTS = [
         title: 'Api de Pagos de Servicios',
         description: 'Creación de API de pagos con drf usando versionamiento',
         github: 'https://github.com/vmarialuzm/ProyectoFinal_drf',
-        image: '/projects/drf.webp',
+        image: '/projects/proyectoDRF.jpg',
         tags: [TAGS.DRF]
     },
     {
         title: 'Api Rick and Morty',
         description: 'Para este proyecto consumí la api Rick and Morty, inserté los datos en una colección de MongoDB y creé vistas HTML usando PyMongo',
         github: 'https://github.com/vmarialuzm/ProyectoFinal_Unidad3_2',
-        image: '/projects/drf.webp',
+        image: '/projects/proyectoFlask.jpg',
         tags: [TAGS.Python, TAGS.MongoDB]
     },
 ]
@@ -41,7 +41,7 @@ const PROJECTS = [
 
 {
     PROJECTS.map(({ image, title, description, tags }) => (
-        <article>
+        <article class="mb-8">
             <h3 class="text-2xl font-semibold text-yellow-800 dark:text-yellow-200 mb-2">{title}</h3>
             <p class="text-lg mb-4 text-pretty">{description}</p>
             <ul class="flex gap-x-2 flex-row mb-2">
