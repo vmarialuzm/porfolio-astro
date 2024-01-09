@@ -1,0 +1,20 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+    {
+        title: "Backend developer - Alticsa",
+        date: "Octubre 2023 - Noviembre 2023",
+        tasks: ["Creación de apis", "Manejar bases de datos", "Manejar Google Cloud", "Desarrollar funcionalidades"],
+        stack: "Python, Flask, Mysql, React, Google Cloud Platform"
+    }
+]
+---
+<ol class="relative border-s border-gray-200 ml-3">         
+    {
+        EXPERIENCE.map(experience => (
+            <li class="mb-10 ms-4">
+                <ExperienceItem {...experience} />
+            </li>
+        ))
+    }
+</ol>
