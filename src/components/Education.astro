@@ -1,12 +1,11 @@
 ---
-import ExperienceItem from "./ExperienceItem.astro"
-const EXPERIENCIE = [
+import EducationItem from "./EducationItem.astro"
+const EDUCATION = [
     {
         date: "Octubre 2022 - Febrero 2023",
         title: "Bootcamp, Desarrollador web Backend",
         institucion: "SILABUZ - MTP",
-        description: "Formación profesional, capacitación técnica Backend en tecnologíascomo Python, Flask, Django, Fastapi, HTML, CSS, Javascript, Mysql,MongoDB, AWS.",
-        link: "#"
+        description: "Formación profesional, capacitación técnica Backend en tecnologíascomo Python, Flask, Django, Fastapi, HTML, CSS, Javascript, Mysql,MongoDB, AWS."
     },
     {
         date: "2015 - 2021",
@@ -17,9 +16,9 @@ const EXPERIENCIE = [
 ---
 <ol class="relative border-s border-gray-200 ml-3">         
     {
-        EXPERIENCIE.map(experiencie => (
+        EDUCATION.map(education => (
             <li class="mb-10 ms-4">
-                <ExperienceItem {...experiencie} />
+                <EducationItem {...education} />
             </li>
         ))
     }
