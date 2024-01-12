@@ -2,6 +2,8 @@
 import Drf from "./icons/Drf.astro"
 import Python from "./icons/Python.astro";
 import MongoDB from "./icons/MongoDB.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import MySQL from "./icons/MySQL.astro"
 
 const TAGS = {
   DRF: {
@@ -18,10 +20,27 @@ const TAGS = {
     name: "MongoDB",
     class: "bg-black text-white",
     icon: MongoDB
+  },
+  Tailwind: {
+    name: "Tailwind",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind
+  },
+  MySQL: {
+    name: "MySQL",
+    class: "bg-[#3BADA8] text-white",
+    icon: MySQL
   }
 }
 
 const PROJECTS = [
+    {
+        title: 'Online MarketPlace',
+        description: 'Proyecto hecho con django, donde puedes crearte un usuario, iniciar sesión, añadir productos, chatear con el vendedor, filtrar productos por categorías y buscar por nombre o descripción',
+        github: 'https://github.com/vmarialuzm/django_online_marketplace',
+        image: '/projects/proyectoDjango.png',
+        tags: [TAGS.DRF, TAGS.Tailwind, TAGS.MySQL]
+    },
     {
         title: 'Api de Pagos de Servicios',
         description: 'Creación de API de pagos con drf usando versionamiento',
