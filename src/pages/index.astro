@@ -1,17 +1,20 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Badge from '../components/Badge.astro';
-import SectionContainer from '../components/SectionContainer.astro';
-import LinkedInIcon from '../components/icons/LinkedIn.astro'
-import GitHubIcon from '../components/icons/GitHub.astro'
-import MailIcon from '../components/icons/Mail.astro'
-import SocialPill from '../components/SocialPill.astro';
-import Education from '../components/Education.astro';
-import Briefcase from '../components/icons/Briefcase.astro';
-import CodeIcon from '../components/icons/Code.astro';
-import Projects from '../components/Projects.astro';
-import Experience from '../components/Experience.astro';
-import School from '../components/icons/School.astro';
+import Layout from '@/layouts/Layout.astro';
+
+import AboutMe from '@/components/AboutMe.astro';
+import Badge from '@/components/Badge.astro';
+import Briefcase from '@/components/icons/Briefcase.astro';
+import CodeIcon from '@/components/icons/Code.astro';
+import Education from '@/components/Education.astro';
+import Experience from '@/components/Experience.astro';
+import GitHubIcon from '@/components/icons/GitHub.astro'
+import LinkedInIcon from '@/components/icons/LinkedIn.astro'
+import MailIcon from '@/components/icons/Mail.astro'
+import ProfileCheck from '@/components/icons/ProfileCheck.astro';
+import Projects from '@/components/Projects.astro';
+import School from '@/components/icons/School.astro';
+import SectionContainer from '@/components/SectionContainer.astro';
+import SocialPill from '@/components/SocialPill.astro';
 ---
 
 <Layout 
@@ -19,7 +22,7 @@ import School from '../components/icons/School.astro';
 	description='Backend Developer Jr. con manejo de frameworks como flask y django y bases de datos relaciones y no relacionales.Formada profesionalmente en Ingenieria Industrial con experiencia en Recursos Humanos. Mi objetivo final es utilizar mis conocimientos para crear soluciones a problemas reales.'
 >
 	<main class="px-4">
-		<SectionContainer class="py-44 pb-32" id="sobre-mi">
+		<SectionContainer class="py-44 pb-32">
 			<img 
 				class="rounded-full size-12 mb-4" 
 				src="https://media.licdn.com/dms/image/D4D03AQFDwgFd05XNfg/profile-displayphoto-shrink_800_800/0/1648177647805?e=1709769600&v=beta&t=d4qHQw8KdBRbk0X5vzbV4MPg9bVKXl_MzyWG9g2IWZU" 
@@ -89,6 +92,16 @@ import School from '../components/icons/School.astro';
 				Proyectos
 			</h2>
 			<Projects />
+		</SectionContainer>
+
+		<SectionContainer id="sobre-mi">
+			<h2 
+				class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+			>
+				<ProfileCheck class="size-7" />
+				Sobre mi
+			</h2>
+			<AboutMe />
 		</SectionContainer>
 	</main>
 </Layout>
